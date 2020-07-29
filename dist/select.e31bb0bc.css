@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.app {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  width: 500px;
+}
+
+.select {
+  height: 100%;
+  position: relative;
+  z-index: 100;
+}
+.select.open .select__dropdown {
+  display: block;
+}
+.select.open .select__input {
+  border-bottom: none;
+}
+.select.open .select__backdrop {
+  display: block;
+}
+.select__backdrop {
+  position: fixed;
+  z-index: -1;
+  display: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.select__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.select__item {
+  padding: 1rem;
+  border-bottom: 1px solid #cccccc;
+}
+.select__item:hover {
+  background-color: #eee;
+  cursor: pointer;
+  transition: 15ms background-color;
+}
+.select__item.selected {
+  background-color: #6ae2cf;
+}
+.select__input {
+  height: 46px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.select__dropdown {
+  display: none;
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  top: 46px;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=/select.e31bb0bc.css.map */
